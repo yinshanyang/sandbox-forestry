@@ -9,5 +9,13 @@ blocks:
   quote: And here’s a great block quote for variety.
   name: Some Person
   title: A Position, Some Company
+- template: _List
+  title: It’s a List
+  content: Some description about how great lists are.
+  items:
+  - title: Some Item
+    content: The content for the first item goes here. It’s great!
+  - title: Another Item
+    content: Why stop at 1? We could great more items here too.
 
 ---
