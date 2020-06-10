@@ -1,21 +1,21 @@
 ---
-label: '(block) List'
+label: "(block) List"
 hide_body: true
 display_field: title
 fields:
+- type: text
+  name: title
+  label: Title
+- type: textarea
+  name: content
+  label: Content
+- type: field_group_list
+  name: items
+  label: Item
+  fields:
   - type: text
     name: title
     label: Title
   - type: textarea
     name: content
     label: Content
-  - type: field_group_list
-    name: items
-    label: Item
-    fields:
-      - type: text
-        name: title
-        label: Title
-      - type: textarea
-        name: content
-        label: Content
