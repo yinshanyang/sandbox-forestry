@@ -12,7 +12,6 @@ fields:
   - type: field_group_list
     name: items
     label: Item
-    display_field: title
     fields:
       - type: text
         name: title
