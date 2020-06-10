@@ -1,0 +1,14 @@
+---
+label: "(block) Quote"
+hide_body: true
+display_field: name
+fields:
+- type: textarea
+  name: quote
+  label: Quote
+- type: text
+  name: name
+  label: Name
+- type: text
+  name: title
+  label: Title

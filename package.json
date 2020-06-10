@@ -1,0 +1,28 @@
+{
+  "name": "sandbox-forestry",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run next:dev -- --port 9000",
+    "build": "npm run next:build && npm run next:export",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:export": "next export -o build",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "forestry:preview": "npm run next:dev -- --port 8080 --hostname 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

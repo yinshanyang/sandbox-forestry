@@ -1,0 +1,17 @@
+---
+label: Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - _Hero
+  - _Quote
+  - _Content
+pages:
+- src/data/pages/_index.md
+- src/data/pages/another-page.md

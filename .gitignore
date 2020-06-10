@@ -1,0 +1,13 @@
+# the basics
+.DS_Store
+node_modules
+
+# let’s ignore package-lock
+package-lock.json
+
+# build and next cache
+.next
+build
+
+# dotenv
+.env.*
