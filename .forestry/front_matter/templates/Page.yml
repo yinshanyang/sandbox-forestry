@@ -15,4 +15,4 @@ fields:
   - _List
 pages:
 - src/data/pages/_index.md
-- src/data/pages/another-page.md
+- src/data/pages/about.md
