@@ -9,7 +9,6 @@ const Page = ({ slug, data }) => {
     const raw = require(`~/data/pages/${slug}.md`)
     data = matter(raw.default).data
   }
-
   return (
     <div className="container mx-auto p-5">
       {data.blocks.map((block, index) => {
