@@ -1,5 +1,5 @@
 ---
-title: Another Page
+title: About
 blocks:
 - template: _Quote
   quote: Hello folks. Let’s quote some stuff from some one. Ho ho ho.
