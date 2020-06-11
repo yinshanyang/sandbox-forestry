@@ -11,6 +11,8 @@ sections:
     label: Pages
     create: all
     match: '*'
+    templates:
+      - Page
   - type: heading
     label: Config
   - type: document
