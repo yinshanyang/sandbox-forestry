@@ -16,3 +16,4 @@ fields:
 pages:
 - src/data/pages/_index.md
 - src/data/pages/about.md
+- src/data/pages/another-page.md
