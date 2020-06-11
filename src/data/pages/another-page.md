@@ -1,5 +1,8 @@
 ---
 title: Another Page
-blocks: []
+blocks:
+- template: _Hero
+  title: Hello Friend
+  content: ''
 
 ---
