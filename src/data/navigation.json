@@ -7,6 +7,10 @@
     {
       "label": "About",
       "path": "/about"
+    },
+    {
+      "label": "Another",
+      "path": "/another-page"
     }
   ]
 }
