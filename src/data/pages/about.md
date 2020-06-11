@@ -1,9 +1,8 @@
 ---
 title: About
 blocks:
-- template: _Quote
-  quote: Hello folks. Let’s quote some stuff from some one. Ho ho ho.
-  name: Some Person
-  title: A Position, Some Company
-
+  - template: _Quote
+    quote: So this is much much better than before.
+    name: Some Person
+    title: A Position, Some Company
 ---

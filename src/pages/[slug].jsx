@@ -2,14 +2,23 @@ import React from 'react'
 
 import Blocks from '~/blocks'
 
-const Page = ({ data }) => (
-  <div className="container mx-auto p-5">
-    {data.blocks.map((block, index) => {
-      const Block = Blocks[block.template]
-      return <Block key={index} {...block} />
-    })}
-  </div>
-)
+const Page = ({ slug, data }) => {
+  // ! this is a hack to get to fast refresh in dev mode
+  if (process.env.NODE_ENV !== 'production') {
+    const matter = require('gray-matter')
+    const raw = require(`~/data/pages/${slug}.md`)
+    data = matter(raw.default).data
+  }
+
+  return (
+    <div className="container mx-auto p-5">
+      {data.blocks.map((block, index) => {
+        const Block = Blocks[block.template]
+        return <Block key={index} {...block} />
+      })}
+    </div>
+  )
+}
 
 export async function getStaticPaths() {
   const path = require('path')
