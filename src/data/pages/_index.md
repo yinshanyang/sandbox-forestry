@@ -15,7 +15,9 @@ blocks:
   - title: Another Item
     content: Why stop at 1? We could great more items here too.
 - template: _Quote
-  quote: " Thank you so much for your great support. Always needed your blessings. "
+  quote: " It gives me immense pleasure sharing that I've joined the elite group of
+    CCIE and my number is 38948. Thank you very much for everything and the way they
+    teach the technologies is unique and it imbibes in our memory. "
   name: " Shehjad Sayyed"
   title: 'CCIE R&S #38948'
 
