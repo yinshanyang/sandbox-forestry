@@ -15,8 +15,8 @@ blocks:
   - title: Another Item
     content: Why stop at 1? We could great more items here too.
 - template: _Quote
-  quote: And here’s a great block quote for variety.
-  name: Some Person
-  title: A Position, Some Company
+  quote: " Thank you so much for your great support. Always needed your blessings. "
+  name: " Shehjad Sayyed"
+  title: 'CCIE R&S #38948'
 
 ---
