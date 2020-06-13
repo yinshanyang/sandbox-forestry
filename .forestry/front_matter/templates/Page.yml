@@ -5,6 +5,11 @@ fields:
   - type: text
     name: title
     label: Title
+  - name: draft
+    label: Draft
+    type: boolean
+    hidden: false
+    default: true
   - type: blocks
     name: blocks
     label: Blocks
