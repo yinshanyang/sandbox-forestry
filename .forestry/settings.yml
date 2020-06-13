@@ -1,35 +1,35 @@
 ---
 new_page_extension: md
-auto_deploy: true
-admin_path: 
-webhook_url: 
+auto_deploy: false
+admin_path:
+webhook_url:
 sections:
-- type: heading
-  label: Content
-- type: directory
-  path: src/data/pages
-  label: Pages
-  create: all
-  match: "*"
-  templates:
-  - Page
-- type: heading
-  label: Config
-- type: document
-  path: src/data/site.json
-  label: Site
-- type: document
-  path: src/data/navigation.json
-  label: Navigation
+  - type: heading
+    label: Content
+  - type: directory
+    path: src/data/pages
+    label: Pages
+    create: all
+    match: '*'
+    templates:
+      - Page
+  - type: heading
+    label: Config
+  - type: document
+    path: src/data/site.json
+    label: Site
+  - type: document
+    path: src/data/navigation.json
+    label: Navigation
 upload_dir: static/uploads
-public_path: "/uploads"
-front_matter_path: "/uploads"
+public_path: '/uploads'
+front_matter_path: '/uploads'
 use_front_matter_path: false
-file_template: ":year:/:month:/:day:/:filename:"
+file_template: ':year:/:month:/:day:/:filename:'
 build:
-  preview_output_directory: ".next"
+  preview_output_directory: '.next'
   install_dependencies_command: npm install
   preview_docker_image: node:10
-  mount_path: "/srv"
-  working_dir: "/srv"
+  mount_path: '/srv'
+  working_dir: '/srv'
   instant_preview_command: npm run forestry:preview
