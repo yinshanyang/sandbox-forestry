@@ -1,6 +1,6 @@
 const FeatureItem = ({ title, items }) => (
   <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
-    <h2 className="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left">
+    <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
       {title}
     </h2>
     <div className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1">
@@ -26,7 +26,7 @@ const FeatureItem = ({ title, items }) => (
   </div>
 )
 
-const Feature = ({ title, subtitle, description, items }) => (
+const Outline = ({ title, subtitle, description, items }) => (
   <section className="text-gray-700 body-font">
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
@@ -46,13 +46,20 @@ const Feature = ({ title, subtitle, description, items }) => (
           </p>
         )}
       </div>
-      <div className="flex flex-wrap -m-4">
-        {items.map((item, index) => (
-          <FeatureItem key={index} {...item} />
-        ))}
-      </div>
+      {items.map(({ title, items }, index) => (
+        <div className="w-full mb-20">
+          <h3 class="w-full text-center text-xl font-medium title-font mb-4 text-gray-900">
+            {title}
+          </h3>
+          <div className="flex flex-wrap -m-4">
+            {items.map((item, index) => (
+              <FeatureItem key={index} {...item} />
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 )
 
-export default Feature
+export default Outline

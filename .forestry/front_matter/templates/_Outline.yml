@@ -1,5 +1,5 @@
 ---
-label: '(block) List'
+label: '(block) Outline'
 hide_body: true
 display_field: title
 fields:
@@ -14,17 +14,18 @@ fields:
     label: Description
   - type: field_group_list
     name: items
-    label: Item
+    label: Items
     fields:
       - type: text
         name: title
         label: Title
-      - type: textarea
-        name: body
-        label: Body
-      - type: text
-        name: path
-        label: Path
-      - type: boolean
-        name: icon
-        label: Icon
+      - type: field_group_list
+        name: items
+        label: Items
+        fields:
+          - type: text
+            name: title
+            label: Title
+          - type: list
+            name: items
+            label: Items

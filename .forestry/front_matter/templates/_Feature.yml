@@ -1,21 +1,24 @@
 ---
-label: "(block) Feature"
+label: '(block) Feature'
 hide_body: true
 display_field: title
 fields:
-- type: text
-  name: title
-  label: Title
-- type: textarea
-  name: description
-  label: Description
-- type: field_group_list
-  name: items
-  label: Items
-  fields:
   - type: text
     name: title
     label: Title
-  - type: list
+  - type: text
+    name: subtitle
+    label: Subtitle
+  - type: textarea
+    name: description
+    label: Description
+  - type: field_group_list
     name: items
     label: Items
+    fields:
+      - type: text
+        name: title
+        label: Title
+      - type: list
+        name: items
+        label: Items

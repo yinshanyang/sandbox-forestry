@@ -5,12 +5,8 @@
       "path": "/"
     },
     {
-      "label": "About",
-      "path": "/about"
-    },
-    {
-      "label": "Outline",
-      "path": "/outline"
+      "label": "Kitchen Sink",
+      "path": "/kitchen-sink"
     }
   ]
 }

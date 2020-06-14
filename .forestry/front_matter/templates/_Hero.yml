@@ -1,11 +1,21 @@
 ---
-label: "(block) Hero"
+label: '(block) Hero'
 hide_body: true
 display_field: title
 fields:
-- type: text
-  name: title
-  label: Title
-- type: textarea
-  name: content
-  label: Content
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: description
+    label: Description
+  - type: field_group_list
+    name: cta
+    label: Call to Action
+    fields:
+      - type: text
+        name: label
+        label: Label
+      - type: text
+        name: path
+        label: Path

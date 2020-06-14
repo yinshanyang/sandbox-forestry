@@ -1,14 +1,14 @@
 ---
-label: "(block) Quote"
+label: '(block) Quote'
 hide_body: true
-display_field: name
+display_field: person
 fields:
-- type: textarea
-  name: quote
-  label: Quote
-- type: text
-  name: name
-  label: Name
-- type: text
-  name: title
-  label: Title
+  - type: textarea
+    name: quote
+    label: Quote
+  - type: text
+    name: person
+    label: Person
+  - type: text
+    name: position
+    label: Position

@@ -1,11 +1,11 @@
 ---
-label: "(block) Content"
+label: '(block) Content'
 hide_body: true
 display_field: title
 fields:
-- type: text
-  name: title
-  label: Title
-- type: textarea
-  name: content
-  label: Content
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content

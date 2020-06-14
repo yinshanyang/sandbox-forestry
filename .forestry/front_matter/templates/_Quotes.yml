@@ -1,0 +1,17 @@
+---
+label: '(block) Quotes'
+hide_body: true
+fields:
+  - type: field_group_list
+    name: items
+    label: Items
+    fields:
+      - type: textarea
+        name: quote
+        label: Quote
+      - type: text
+        name: person
+        label: Person
+      - type: text
+        name: position
+        label: Position

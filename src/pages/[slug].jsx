@@ -44,7 +44,6 @@ export async function getStaticProps(context) {
     ? matter(fs.readFileSync(dataPath)).data
     : { blocks: [] }
 
-  console.log(data)
   return { props: { slug, data } }
 }
 
