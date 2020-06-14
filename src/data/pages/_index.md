@@ -7,7 +7,6 @@ blocks:
       Alright folks. We have a hack that enables fast refresh on our preview
       server. I’m not sure if this is the best approach to dealing with previews, but
       at least it vastly improves the user experience of creating and updating content.
-    image: https://dummyimage.com/720x600
     cta:
       - label: Action
         path: '#'

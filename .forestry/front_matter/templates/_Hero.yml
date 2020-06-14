@@ -9,6 +9,10 @@ fields:
   - type: textarea
     name: description
     label: Description
+  - type: file
+    name: image
+    label: Image
+    default: https://dummyimage.com/720x600
   - type: field_group_list
     name: cta
     label: Call to Action
